@@ -1,0 +1,14 @@
+
+INÍCIO
+
+    ESCREVA "Tabuada do 9 (truque de 0 a 9 pra baixo):"
+
+    PARA i DE 0 ATÉ 9 FAÇA
+        dezena ← i
+        unidade ← 9 - i
+        resultado ← (dezena * 10) + unidade
+
+        ESCREVA "9 x", i + 1, " = ", resultado
+    FIM PARA
+
+FIM

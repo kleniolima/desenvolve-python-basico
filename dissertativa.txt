@@ -1,0 +1,25 @@
+for i in range(10):
+    esquerda = i
+    direita = 9 - i
+    resultado = f"{esquerda}{direita}"
+    print(f"{esquerda} {direita} → {resultado}")
+
+Este código gera a saída:
+
+
+0 9 → 09
+1 8 → 18
+2 7 → 27
+3 6 → 36
+4 5 → 45
+5 4 → 54
+6 3 → 63
+7 2 → 72
+8 1 → 81
+9 0 → 90
+ 
+Entrada: O número n (de 1 a 10) fornecido pelo usuário.
+
+Processamento: Aplicar as operações (n - 1), (10 - n), calcular o resultado com a fórmula.
+
+Saída: Exibir o resultado final da multiplicação por 9.
