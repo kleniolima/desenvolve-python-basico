@@ -1,1 +1,3 @@
-
+# O range começa em 10, vai até 1 e diminui de 1 em 1
+for numero in range(10, 0, -1):
+    print(numero)
