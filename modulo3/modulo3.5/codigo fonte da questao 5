@@ -1,0 +1,38 @@
+# criando banco de dados :
+usuarios = {
+    "admin": ("admin123", "Administrador"),
+    "usuario1": ("senha123", "Usuário Comum"),
+    "visitante1": ("guest2024", "Visitante")
+}
+
+# Sistema de autenticação
+while True:# 
+    print("\n=== autenticação projeto desenvolve ===")
+    print("1 - Fazer login")
+    print("2 - Sair")
+
+    opcao = input("Escolha uma opção: ")
+
+    if opcao == "2":
+        print("Programa encerrado.")
+        break
+
+    elif opcao == "1":
+        usuario = input("Usuário: ")
+        senha = input("Senha: ")
+
+        # Verifica se o usuário existe
+        if usuario in usuarios:
+            senha_armazenada, nivel_acesso = usuarios[usuario]
+
+            # Compara a senha fornecida com a armazenada
+            if senha == senha_armazenada:
+                print(f"\nLogin realizado com sucesso!")
+                print(f"Nível de acesso: {nivel_acesso}")
+            else:
+                print("Erro: Usuário ou senha inválidos.")
+        else:
+            print("Erro: Usuário ou senha inválidos.")
+
+    else:
+        print("Opção inválida. Tente novamente.")
