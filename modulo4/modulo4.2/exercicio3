@@ -1,0 +1,15 @@
+# Variável que armazenará a soma dos valores
+soma = 0
+
+# Lê 10 valores
+for i in range(10):
+    valor = int(input(f"Digite o {i + 1}º número: "))
+
+    # Adiciona o valor à soma
+    soma = soma + valor
+
+# Calcula a média dos 10 valores
+media = soma / 10
+
+# Exibe a média com duas casas decimais
+print(f"A média dos valores digitados é {media:.2f}")
