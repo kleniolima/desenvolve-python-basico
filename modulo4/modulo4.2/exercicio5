@@ -1,0 +1,28 @@
+# Lê a quantidade de linhas do tabuleiro
+n = int(input())
+
+# Lê a quantidade de colunas do tabuleiro
+m = int(input())
+
+# Imprime o cabeçalho das colunas
+# Começa com um espaço para deixar o cabeçalho alinhado
+print(" ", end="")
+
+for coluna in range(1, m + 1):
+    print(coluna, end=" ")
+
+# Quebra a linha depois do cabeçalho
+print()
+
+# Imprime cada linha do tabuleiro
+for linha in range(1, n + 1):
+
+    # Imprime o número da linha
+    print(linha, end=" ")
+
+    # Imprime as posições jogáveis da linha
+    for coluna in range(1, m + 1):
+        print("/", end=" ")
+
+    # Quebra a linha depois de imprimir todas as colunas
+    print()
