@@ -1,0 +1,20 @@
+# Inicializa o produto com 1,
+# pois 1 é o elemento neutro da multiplicação
+produto = 1
+
+# Repete a leitura dos valores indefinidamente
+while True:
+    # Lê um valor inteiro digitado pelo usuário
+    valor = int(input())
+
+    # Se o valor for 0, encerra a leitura
+    if valor == 0:
+        break
+
+    # Verifica se o valor é positivo
+    if valor > 0:
+        # Multiplica o valor positivo pelo produto atual
+        produto = produto * valor
+
+# Exibe o produto dos valores positivos
+print(f"Produto: {produto}")
