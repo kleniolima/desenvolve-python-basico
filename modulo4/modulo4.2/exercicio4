@@ -1,0 +1,36 @@
+# Lê a quantidade de jogos do Cruzeiro
+n = int(input("Digite a quantidade de jogos: "))
+
+# Inicializa os contadores
+vitorias = 0
+empates = 0
+derrotas = 0
+pontuacao = 0
+
+# Repete para cada jogo
+for i in range(n):
+
+    # Lê a quantidade de gols do Cruzeiro
+    gols_cruzeiro = int(input("Digite os gols do Cruzeiro: "))
+
+    # Lê a quantidade de gols do adversário
+    gols_adversario = int(input("Digite os gols do adversário: "))
+
+    # Verifica o resultado do jogo
+    if gols_cruzeiro > gols_adversario:
+        vitorias += 1
+        pontuacao += 3
+
+    elif gols_cruzeiro == gols_adversario:
+        empates += 1
+        pontuacao += 1
+
+    else:
+        derrotas += 1
+        pontuacao += 0
+
+# Exibe os resultados
+print(f"Vitórias: {vitorias}")
+print(f"Empates: {empates}")
+print(f"Derrotas: {derrotas}")
+print(f"Pontuação: {pontuacao}")
