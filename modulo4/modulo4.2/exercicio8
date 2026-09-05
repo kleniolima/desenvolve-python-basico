@@ -1,0 +1,40 @@
+# Exibe uma mensagem explicando como usar a calculadora
+print("Calculadora")
+print("Digite um número, depois um operador (+ ou -) e outro número.")
+print('Quando terminar, digite "Fim".')
+print()
+
+# Solicita o primeiro número da expressão
+resultado = int(input("Digite o primeiro número: "))
+
+# Inicia a repetição para ler os operadores e valores
+while True:
+    # Solicita o próximo operador ou o comando para finalizar
+    operador = input('Digite "+" ou "-" para continuar, ou "Fim" para finalizar: ')
+
+    # Verifica se o usuário deseja encerrar
+    if operador.lower() == "fim":
+        break
+
+    # Verifica se o operador é válido
+    if operador != "+" and operador != "-":
+        print("Operador inválido! Digite apenas +, - ou Fim.")
+        continue
+
+    # Solicita o próximo número
+    valor = int(input("Digite o próximo número: "))
+
+    # Realiza a soma
+    if operador == "+":
+        resultado += valor
+
+    # Realiza a subtração
+    elif operador == "-":
+        resultado -= valor
+
+    # Mostra o resultado parcial
+    print(f"Resultado parcial: {resultado}")
+    print()
+
+# Exibe o resultado final
+print(f"Resultado final: {resultado}")
